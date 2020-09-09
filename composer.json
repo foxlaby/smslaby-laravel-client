@@ -1,0 +1,25 @@
+{
+    "name": "foxlaby/smslaby-laravel-client",
+    "description": "You can send sms through a our server using your sender id encryption key.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karim Mohamed",
+            "email": "komicho1996@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FoxLaby\\SMSLaby\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FoxLaby\\SMSLaby\\Adapters\\Laravel\\SMSLabyServiceProvider"
+            ]
+        }
+    }
+}
