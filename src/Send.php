@@ -80,6 +80,18 @@ class Send
     }
 
     /**
+     * Add number phone to the collection
+     * @param string $collection
+     * @return object this class
+     */
+    public function collection($collection)
+    {
+        $this->config['collection'] = $collection;
+
+        return $this;
+    }
+
+    /**
      * Write the content of the message
      * @param string $body
      * @return array from run method in call class

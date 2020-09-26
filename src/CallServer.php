@@ -28,6 +28,7 @@ class CallServer
                 'number' => $this->config['to'],
                 'body' => $this->config['message'],
                 'mode' => $this->config['mode'],
+                'collection' => $this->config['collection'],
             ]);
 
         return $response;
